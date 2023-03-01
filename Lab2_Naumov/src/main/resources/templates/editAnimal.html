@@ -1,0 +1,31 @@
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование</title>
+</head>
+<body>
+<h3>Заполните данные питомца</h3>
+<form action="#" th:action="@{/animal/edit}" method="post" th:object="${animal}">
+    <input type="hidden" th:field = "*{chipId}">
+    <input th:field = "*{name}" placeholder="Введите кличку" class="form-control col-10" required><br>
+    <select th:field="*{sex}">
+        <option th:value="'Кобель'" th:text="Кобель"></option>
+        <option th:value="'Сука'" th:text="Сука"></option>
+    </select><br>
+    <input th:field = "*{color}"  placeholder="Введите цвет" class="form-control  col-4" required><br>
+    <input th:field = "*{breed}"  placeholder="Введите породу" class="form-control  col-4" required><br>
+    <select th:field="*{owner}">
+        <option th:value=null>В приюте</option>
+        <option th:each="el : ${owners}" th:value="${el.getOwnerId()}" th:text="${el.getFullName()}"></option>
+    </select><br>
+    <button type="submit">Добавить</button>
+</form>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

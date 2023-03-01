@@ -1,0 +1,18 @@
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Питомцы</title>
+</head>
+<body>
+<h2>Список питомцев</h2>
+<a th:href="@{/}">На главную </a> <br>
+<a th:href="@{/owner}">К хозяевам </a> <br>
+<a th:href="@{/animal/add}">Добавить </a>
+<ol th:each = "el: ${animals}">
+  <span th:text = "${el.toString()}"></span>
+  <a th:href="@{/animal/edit(chipId=${el.getChipId()})}">Редактировать</a> | <a th:href="@{/animal/remove(chipId=${el.getChipId()})}">Удалить</a>
+</ol>
+</body>
+</html>
