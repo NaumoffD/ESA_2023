@@ -4,7 +4,6 @@
 ![image](https://user-images.githubusercontent.com/62326372/209641114-50180387-e48e-4fb9-85c3-697a0ebf5fc9.png)
 2) Был скачан, настроен и подключен к БД сервер.
 ![image](https://user-images.githubusercontent.com/62326372/209641575-c30204eb-cccc-434d-9f99-552783d094ca.png)
-![image](https://user-images.githubusercontent.com/62326372/209641606-22a9a593-0777-4438-b7a6-d4f8346b622c.png)
 ![image](https://user-images.githubusercontent.com/62326372/209641644-fc8013e2-d4fe-42de-9d27-cd631687fadf.png)
 3) Созданы бины, сущности и сервлеты для запросов к БД и обработки полученных данных.
 4) Сделан простой view layer на jsp для минимального отображения информации и демонстрации работы. </br>
